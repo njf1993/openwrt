@@ -21,8 +21,8 @@ git clone --depth=1 https://github.com/garypang13/luci-app-bypass.git package/lu
 
 # 添加bypass 依赖
 svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns package/smartdns
-svn co  https://github.com/garypang13/openwrt-packages/trunk/tcping package/tcping
-svn co  https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb package/lua-maxminddb
+svn co https://github.com/garypang13/openwrt-packages/trunk/tcping package/tcping
+svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb package/lua-maxminddb
 
 # 添加dnsfilter
 git clone --depth=1 https://github.com/garypang13/luci-app-dnsfilter.git package/luci-app-dnsfilter
