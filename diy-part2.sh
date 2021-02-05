@@ -17,7 +17,9 @@ sed -i 's/192.168.1.1/192.168.1.2/g' package/base-files/files/bin/config_generat
 sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0/$1$LrPFEvqu$gJIceWv7kbIWXHxtFI89Y.:18539/g' package/lean/default-settings/files/zzz-default-settings
 
 # 添加argon主题
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
+git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
+rm -rf ../lean/luci-theme-argon
 
 # 添加京东自动签到
 # git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/lean/luci-app-jd-dailybonus
