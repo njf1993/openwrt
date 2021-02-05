@@ -23,6 +23,8 @@ git clone --depth=1 https://github.com/garypang13/luci-app-bypass.git package/lu
 svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns package/smartdns
 svn co https://github.com/garypang13/openwrt-packages/trunk/tcping package/tcping
 svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb package/lua-maxminddb
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
 
 # 添加dnsfilter
 git clone --depth=1 https://github.com/garypang13/luci-app-dnsfilter.git package/luci-app-dnsfilter
