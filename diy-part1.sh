@@ -16,6 +16,11 @@ git clone https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
 # 添加PassWall
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
 
+# 添加luci-theme-argon
+rm -rf ../lean/luci-theme-argon
+git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
+git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
+
 # 添加smartdns
 # git clone https://github.com/pymumu/smartdns.git package/smartdns
 # git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
