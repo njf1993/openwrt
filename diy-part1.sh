@@ -11,10 +11,13 @@
 #
 
 # 添加SSR-Plus
-git clone https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
+# git clone https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
 
 # 添加PassWall
-git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
+# git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
+
+# 添加bypass
+git clone --depeh=1 https://github.com/garypang13/luci-app-bypass
 
 # 添加luci-theme-argon
 rm -rf ../lean/luci-theme-argon
