@@ -10,5 +10,17 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-# Modify default IP
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+# 更改默认IP
+sed -i 's/192.168.1.1/192.168.1.2/g' package/base-files/files/bin/config_generate
+
+# 更改管理密码
+sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0/$1$LrPFEvqu$gJIceWv7kbIWXHxtFI89Y.:18539/g' package/lean/default-settings/files/zzz-default-settings
+
+# 添加argon主题
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+
+# 添加京东自动签到
+# git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/lean/luci-app-jd-dailybonus
+
+# 更改主题
+# sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ../feeds/luci/collections/luci/Makefile
