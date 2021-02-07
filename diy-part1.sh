@@ -14,18 +14,18 @@
 # git clone https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
 
 # 添加PassWall
-git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
-
-# 添加bypass
-# git clone https://github.com/garypang13/luci-app-bypass.git package/luci-app-bypass
+# git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
 
 # 添加bypass 依赖
 # svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns
 # svn co https://github.com/garypang13/openwrt-packages/trunk/tcping
-# svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb
+svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb
+
+# 添加bypass
+git clone https://github.com/garypang13/luci-app-bypass.git package/luci-app-bypass
 
 # 添加dnsfilter
-# git clone https://github.com/garypang13/luci-app-dnsfilter.git package/luci-app-dnsfilter
+git clone https://github.com/garypang13/luci-app-dnsfilter.git package/luci-app-dnsfilter
 
 # 添加luci-theme-argon
 rm -rf ../lean/luci-theme-argon
