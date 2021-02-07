@@ -33,7 +33,7 @@ git clone https://github.com/garypang13/luci-app-dnsfilter.git package/luci-app-
 rm -rf ../lean/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-argon-config
-git clone -b 18.06 https://github.com/garypang13/luci-theme-edge
+# git clone -b 18.06 https://github.com/garypang13/luci-theme-edge
 
 # 添加smartdns
 # git clone https://github.com/pymumu/smartdns.git package/smartdns
