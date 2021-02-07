@@ -19,7 +19,7 @@
 # 添加bypass 依赖
 # svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns
 # svn co https://github.com/garypang13/openwrt-packages/trunk/tcping
-svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb
+svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb package/lua-maxminddb
 
 # 添加bypass
 git clone https://github.com/garypang13/luci-app-bypass.git package/luci-app-bypass
