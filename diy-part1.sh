@@ -11,10 +11,10 @@
 #
 
 # 添加SSR-Plus
-# git clone https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
+git clone https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
 
 # 添加PassWall
-# git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
 
 # 添加bypass 依赖
 # svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns
