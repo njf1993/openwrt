@@ -29,11 +29,11 @@ find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -
 # 添加dnsfilter
 git clone https://github.com/garypang13/luci-app-dnsfilter.git package/luci-app-dnsfilter
 
-# 添加luci-theme-argon
-rm -rf ../lean/luci-theme-argon
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-theme-argon
+# 添加luci-theme-edge
 git clone -b 18.06 https://github.com/garypang13/luci-theme-edge package/luci-theme-edge
+
+# 添加luci-app-argon-config
+git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
 # 添加smartdns
 # git clone https://github.com/pymumu/smartdns.git package/smartdns
