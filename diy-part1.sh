@@ -11,7 +11,7 @@
 #
 
 # 添加SSR-Plus
-git clone https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
+# git clone https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
 
 # 添加PassWall
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
