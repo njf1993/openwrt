@@ -11,7 +11,7 @@
 #
 
 # 添加SSR-Plus
-git clone https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
+# git clone https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
 
 # 添加PassWall
 # git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
@@ -22,6 +22,7 @@ git clone https://github.com/garypang13/luci-app-bypass.git package/luci-app-byp
 # 添加bypass 依赖
 # svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns
 # svn co https://github.com/garypang13/openwrt-packages/trunk/tcping
+svn co https://github.com/garypang13/openwrt-packages/trunk/luci-app-ssr-plus package/luci-app-ssr-plus
 svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb package/lua-maxminddb
 find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
 find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
