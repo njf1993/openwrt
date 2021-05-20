@@ -14,26 +14,26 @@
 # git clone https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
 
 # 添加PassWall
-# git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
 
 # 添加bypass
-git clone https://github.com/garypang13/luci-app-bypass package/diy/luci-app-bypass
+git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
 
 # 添加bypass 依赖
-git clone https://github.com/garypang13/smartdns-le                         package/diy/smartdns-le
-svn co https://github.com/garypang13/openwrt-packages/trunk/chinadns-ng     package/diy/chinadns-ng
-svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-go       package/diy/trojan-go
-svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-plus     package/diy/trojan-plus
-svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb   package/diy/lua-maxminddb
+git clone https://github.com/garypang13/smartdns-le                         package/smartdns-le
+svn co https://github.com/garypang13/openwrt-packages/trunk/chinadns-ng     package/chinadns-ng
+svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-go       package/trojan-go
+svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-plus     package/trojan-plus
+svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb   package/lua-maxminddb
 
 find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
 find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
 
 # 添加dnsfilter
-git clone https://github.com/garypang13/luci-app-dnsfilter package/diy/luci-app-dnsfilter
+git clone https://github.com/garypang13/luci-app-dnsfilter package/luci-app-dnsfilter
 
 # 添加luci-theme-edge
-git clone -b 18.06 https://github.com/garypang13/luci-theme-edge package/diy/luci-theme-edge
+git clone -b 18.06 https://github.com/garypang13/luci-theme-edge package/luci-theme-edge
 
 # 添加luci-app-argon-config
 # git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
