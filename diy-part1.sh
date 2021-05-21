@@ -21,9 +21,9 @@ git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
 
 # 添加bypass 依赖
 git clone https://github.com/garypang13/smartdns-le                         package/smartdns-le
-svn co https://github.com/garypang13/openwrt-packages/trunk/chinadns-ng     package/chinadns-ng
-svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-go       package/trojan-go
-svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-plus     package/trojan-plus
+# svn co https://github.com/garypang13/openwrt-packages/trunk/chinadns-ng     package/chinadns-ng
+# svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-go       package/trojan-go
+# svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-plus     package/trojan-plus
 svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb   package/lua-maxminddb
 
 # 添加dnsfilter
