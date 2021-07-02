@@ -27,7 +27,7 @@ git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
 # svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb   package/lua-maxminddb
 
 # 添加dnsfilter
-git clone https://github.com/garypang13/luci-app-dnsfilter package/luci-app-dnsfilter
+# git clone https://github.com/garypang13/luci-app-dnsfilter package/luci-app-dnsfilter
 
 # 添加luci-theme-edge
 git clone -b 18.06 https://github.com/garypang13/luci-theme-edge package/luci-theme-edge
